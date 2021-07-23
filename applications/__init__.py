@@ -35,8 +35,8 @@ def create_app(test_config=None):
 
 app = create_app()
 
-from applications.controller.graph import Graph
+from applications.controller.graph import GraphView
 from applications.controller.user import User
 
-Graph.register(app, route_prefix="/graph")
+GraphView.register(app, route_prefix="/graph")
 User.register(app, route_prefix="/user")

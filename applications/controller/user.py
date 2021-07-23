@@ -14,3 +14,4 @@ class User(FlaskView):
     @route('register')
     def user_registration(self):
         return "there will be a form that user can register him/her self."
+
