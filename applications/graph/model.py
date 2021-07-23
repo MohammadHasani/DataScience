@@ -46,4 +46,5 @@ class GraphModel:
                           shapes=self.broken_bars(df['End Chainage'], df['Start Chainage'], ywidth, ystep1,
                                                   colors=colors2))
         fig.update_yaxes(tickvals=tickvals1, ticktext=df['Feature\n'], tickmode='array')
-        fig.write_html('Gantt.html', auto_open=False)
+        # fig.write_html('Gantt.html', auto_open=False)
+        return fig.to_html()

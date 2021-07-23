@@ -1,3 +1,4 @@
+from flask import render_template, current_app
 from flask_classful import FlaskView, route
 
 
@@ -10,8 +11,6 @@ class User(FlaskView):
     def post(self):
         return "this is a post request sent to User class view."
 
-
-    @route('register')
-    def user_registration(self):
-        return "there will be a form that user can register him/her self."
-
+    @route('signup')
+    def signup(self):
+        return render_template('/user/signup.html')
