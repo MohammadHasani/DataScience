@@ -14,3 +14,4 @@ class User(FlaskView):
     @route('signup')
     def signup(self):
         return render_template('/user/signup.html')
+

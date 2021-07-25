@@ -19,8 +19,8 @@ class GraphModel:
                                line_color=colors[k]))
         return shapes
 
-    def create_graph(self):
-        df = pandas.read_excel("IPP EXAMPLE TO.xlsx", engine="openpyxl")
+    def create_graph(self, file_name):
+        df = pandas.read_excel(file_name + ".xlsx", engine="openpyxl")
 
         colors2 = []
 
